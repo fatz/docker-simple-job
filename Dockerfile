@@ -1,6 +1,8 @@
 FROM ubuntu:trusty
 
-ADD ./job.sh /job.sh
+COPY ./job.sh /job.sh
+
+COPY scm-source.json /
 
 ENV EXITCODE=0
 env WAITTIME=20
